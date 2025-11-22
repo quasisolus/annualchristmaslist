@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2025 List - Kaden's Annual Christmas List</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div id="music-player-controls" class="minimized">
+      <div class="player-header-bar">
+        <button id="toggle-player-expand" class="player-toggle-btn" onclick="togglePlayerExpand()">🎵</button>
+        <div class="player-controls-expanded">
+          <span id="current-track-name" class="track-name">Loading...</span>
+          <div class="player-buttons">
+            <button id="prev-track-btn" class="player-control-btn" onclick="skipPrevious()" title="Previous">⏮</button>
+            <button id="play-pause-btn" class="player-control-btn" onclick="togglePlayPause()" title="Play/Pause">⏸</button>
+            <button id="next-track-btn" class="player-control-btn" onclick="skipNext()" title="Next">⏭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../music-player.js"></script>
+    <header>
+      <h1>Kaden's Annual Christmas List</h1>
+    </header>
+    <main>
+      <div class="list-container">
+        <h2>Year 2025 List</h2>
+        <ul>
+          <li>
+            <a href="https://shorturl.at/22jLJ">ITEM</a>
+          </li>
+        </ul>
+      </div>
+      <div class="button-group">
+        <a href="../lists.html" class="btn-primary">Back to Lists</a>
+        <a href="../index.html" class="btn-primary">Back to Home</a>
+      </div>
+    </main>
+  </body>
+</html>
