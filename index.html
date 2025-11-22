@@ -8,22 +8,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="music-player-controls" class="minimized">
+      <div class="player-header-bar">
+        <button id="toggle-player-expand" class="player-toggle-btn" onclick="togglePlayerExpand()">🎵</button>
+        <div class="player-controls-expanded">
+          <span id="current-track-name" class="track-name">Loading...</span>
+          <div class="player-buttons">
+            <button id="prev-track-btn" class="player-control-btn" onclick="skipPrevious()" title="Previous">⏮</button>
+            <button id="play-pause-btn" class="player-control-btn" onclick="togglePlayPause()" title="Play/Pause">⏸</button>
+            <button id="next-track-btn" class="player-control-btn" onclick="skipNext()" title="Next">⏭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="music-player.js"></script>
     <header>
       <h1>Kaden's Annual Christmas List</h1>
     </header>
     <main>
       <section class="intro">
         <img src="img/cat.png" alt="Cat" />
-        <div class="stuff">
+        <div class="content">
           <p>
-            I don't want to send my parents my Christmas list every year because
-            I'm too lazy. Instead, I'll make it harder for myself by taking more
-            time than I actually need to by making this website!
+            hey guys this is my christmas list! please help me out by buying me something from my list!
           </p>
-          <p>
-            <em>Note: I will add more lists in chronological order by year.</em>
+          <p class="note">
+            <em>note: i will add more lists in chronological order by year.</em>
           </p>
-          <a href="lists.html"><button>View Lists</button></a>
+          <a href="lists.html" class="btn-primary">View Lists</a>
         </div>
       </section>
     </main>

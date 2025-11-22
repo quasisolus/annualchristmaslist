@@ -1,22 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Kaden's Annual Christmas List</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists - Kaden's Annual Christmas List</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Lists</h1>
-    <div class="container">
-      <div class="twenty-four">
-        <h3>Year 2024</h3>
-        <p><a href="lists/2024.html">2024 List</a></p>
+    <div id="music-player-controls" class="minimized">
+      <div class="player-header-bar">
+        <button id="toggle-player-expand" class="player-toggle-btn" onclick="togglePlayerExpand()">🎵</button>
+        <div class="player-controls-expanded">
+          <span id="current-track-name" class="track-name">Loading...</span>
+          <div class="player-buttons">
+            <button id="prev-track-btn" class="player-control-btn" onclick="skipPrevious()" title="Previous">⏮</button>
+            <button id="play-pause-btn" class="player-control-btn" onclick="togglePlayPause()" title="Play/Pause">⏸</button>
+            <button id="next-track-btn" class="player-control-btn" onclick="skipNext()" title="Next">⏭</button>
+          </div>
+        </div>
       </div>
     </div>
-    <br>
-    <a href="index.html"><button>Back to Home</button></a>
+    <script src="music-player.js"></script>
+    <header>
+      <h1>Kaden's Annual Christmas List</h1>
+    </header>
+    <main>
+      <h2>Lists</h2>
+      <div class="container">
+        <div class="year-card">
+          <h3>Christmas of 2025</h3>
+          <p><a href="lists/2025.html">2025 List</a></p>
+        </div>
+        <div class="year-card">
+          <h3>Christmas of 2024</h3>
+          <p><a href="lists/2024.html">2024 List</a></p>
+        </div>
+      </div>
+      <div class="button-group">
+        <a href="index.html" class="btn-primary">Back to Home</a>
+      </div>
+    </main>
   </body>
 </html>
