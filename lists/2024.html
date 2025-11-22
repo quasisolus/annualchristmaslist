@@ -1,38 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Kaden's Annual Christmas List</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024 List - Kaden's Annual Christmas List</title>
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <div>
-      <h1 style="text-align: center">Year 2024 List</h1>
-      <p><em>Not Bought</em></p>
-      <ul>
-        <li><a>Wall Mounted CD Player</a></li>
-        <li><a href="https://ebay.com">Snowboard Helmet (Search on Ebay)</a></li>
-      </ul>
-      <p><em>Bought</em></p>
-      <ul>
-        <li><a href="https://shorturl.at/fHA6W">Aruino Starter Kit</a></li>
-        <li><a href="https://shorturl.at/lUXEG">Flower Boy CD</a></li>
-        <li><a href="https://shorturl.at/1jiM2">IGOR CD</a></li>
-        <li><a href="https://shorturl.at/BLXxh">Wolf CD</a></li>
-        <li><a href="https://shorturl.at/8fH75">TI-84 Plus CE Calculator</a></li>
-        <li><a href="https://shorturl.at/22jLJ">Phone Holder for Electric Scooter</a></li>
-        <li><a href="https://shorturl.at/BiOZt">Bose QuietComfort 35 Ear Muffs (Black)</a></li>
-        <li><a href="https://shorturl.at/ic5YF">SRB400 KIT REFURBISHED 2.0</a></li>
-        <li><a href="https://shorturl.at/l6FEK">Battery Cover Rail Mod Compatible with the SRB400</a></li>
-        <li><a href="https://bit.ly/3ZS0goG">Accessories Compatible with SRB400 Blaster Gun (Tactical Mount + Sight Set)</a></li>
-        <li><a href="https://bit.ly/3P9OyAO">Red Laser Sight for SRB1200 and SRB400 with 2 sets of batteries</a></li>
-      </ul>
+    <div id="music-player-controls" class="minimized">
+      <div class="player-header-bar">
+        <button id="toggle-player-expand" class="player-toggle-btn" onclick="togglePlayerExpand()">🎵</button>
+        <div class="player-controls-expanded">
+          <span id="current-track-name" class="track-name">Loading...</span>
+          <div class="player-buttons">
+            <button id="prev-track-btn" class="player-control-btn" onclick="skipPrevious()" title="Previous">⏮</button>
+            <button id="play-pause-btn" class="player-control-btn" onclick="togglePlayPause()" title="Play/Pause">⏸</button>
+            <button id="next-track-btn" class="player-control-btn" onclick="skipNext()" title="Next">⏭</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <br>
-    <a href="../lists.html"><button>Back to Lists</button></a>
-    <a href="../index.html"><button>Back to Home</button></a>
+    <script src="../music-player.js"></script>
+    <header>
+      <h1>Kaden's Annual Christmas List</h1>
+    </header>
+    <main>
+      <div class="list-container">
+        <h2>Year 2024 List</h2>
+        <ul>
+          <li><a><s>CD Player</s></a></li>
+          <li><a href="https://shorturl.at/fHA6W"><s>Arduino Starter Kit</s></a></li>
+          <li><a href="https://shorturl.at/lUXEG"><s>Flower Boy CD</s></a></li>
+          <li><a href="https://shorturl.at/1jiM2"><s>IGOR CD</s></a></li>
+          <li><a href="https://shorturl.at/BLXxh"><s>Wolf CD</s></a></li>
+          <li>
+            <a href="https://shorturl.at/8fH75"><s>TI-84 Plus CE Calculator</s></a>
+          </li>
+          <li>
+            <a href="https://shorturl.at/22jLJ"
+              ><s>Phone Holder for Electric Scooter</s></a
+            >
+          </li>
+          <li>
+            <a href="https://shorturl.at/BiOZt"
+              ><s>Bose QuietComfort 35 Ear Muffs (Black)</s></a
+            >
+          </li>
+          <li>
+            <a href="https://shorturl.at/ic5YF"><s>SRB400 KIT REFURBISHED 2.0</s></a>
+          </li>
+          <li>
+            <a href="https://shorturl.at/l6FEK"
+              ><s>Battery Cover Rail Mod Compatible with the SRB400</s></a
+            >
+          </li>
+          <li>
+            <a href="https://bit.ly/3ZS0goG"
+              ><s>Accessories Compatible with SRB400 Blaster Gun (Tactical Mount +
+              Sight Set)</s></a
+            >
+          </li>
+          <li>
+            <a href="https://bit.ly/3P9OyAO"
+              ><s>Red Laser Sight for SRB1200 and SRB400 with 2 sets of batteries</s></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="button-group">
+        <a href="../lists.html" class="btn-primary">Back to Lists</a>
+        <a href="../index.html" class="btn-primary">Back to Home</a>
+      </div>
+    </main>
   </body>
 </html>
